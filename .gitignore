@@ -35,3 +35,4 @@ coverage/
 .idea/
 .vscode/
 *.swp
+tribal-edge-server.code-workspace
