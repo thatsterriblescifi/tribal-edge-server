@@ -1,5 +1,10 @@
 rev. Jack Dobson
 
+Tribal Edge Server... T.E.S. How appropriate it ends up with a woman's name, Tess.
+
+I can only hope Sigonrey Weaver will open-source her voice after she dies so she
+can be a computer voice forever.
+
 - imagine asking your local tribal server:
 
 "Please refactor & normalize $this project, keeping design intention and project
@@ -23,4 +28,4 @@ for... questions I ask so ofern it's embarrassing. Or 1000 other automated whate
 I mean aren't we seeing a natural tokens are "Strange Currency" thing evolving, better
 get in front of it or The People will suffer.
 
-R&M - You pass butter.
+R&M - "You pass butter."
