@@ -1,0 +1,23 @@
+rev. Jack Dobson
+
+- imagine asking your tribal server:
+
+"Please refactor & normalize $this project, keeping design intention and project
+goals in mind."
+
+your 30B-ish tribal server evaluates this as a "big picture" question better suited to a
+more capable model. It doesn't simply pass the request upstream.
+
+it evaluates the project structure from the standpoint of asking the bigger model a more
+intelligent & effecient question.
+
+I mean aren't we seeing a natural tokens are "Strange Currency" thing evolving, better
+get in front of it or The People will suffer.
+
+the Big model then replies with an answer taylored for the 30B to be able to properly
+present it back to the user.
+
+So the big model never gets asked mundane questions... like what's
+the proper syntax for... questions I ask so ofern it's embarrassing.
+
+R&M - You pass butter.
