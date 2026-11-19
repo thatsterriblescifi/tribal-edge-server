@@ -1,0 +1,60 @@
+# Design sketch only: there is no implementation or supported config schema yet.
+# External providers are disabled. Enabling one requires deliberate deployment
+# configuration and does not replace network controls that prevent bypass.
+
+server:
+  bind_address: "127.0.0.1"
+  port: 8080
+local:
+  provider: ollama
+  base_url: "http://127.0.0.1:11434"
+  model: "replace-with-your-local-model"
+  timeout_seconds: 120
+
+routing:
+  default_route: local
+  external:
+    enabled: false
+    require_user_approval: true
+    fail_closed_on_policy_error: true
+
+providers:
+  - id: private-lab
+    type: openai-compatible
+    enabled: false
+    base_url: "https://replace-with-private-endpoint.example"
+    api_key_env: PRIVATE_LAB_API_KEY
+
+  - id: public-provider
+    type: provider-adapter
+    enabled: false
+    api_key_env: PUBLIC_PROVIDER_API_KEY
+
+# Policy is keyed by the provider IDs above. "allow" is still subject to the
+# provider being enabled and routing.external.enabled being true.
+data_classes:
+  public:
+    local: allow
+    private-lab: allow
+    public-provider: allow
+
+  internal:
+    local: allow
+    private-lab: allow
+    public-provider: deny
+
+  confidential:
+    local: allow
+    private-lab: require_approval
+    public-provider: deny
+
+  restricted:
+    local: require_approval
+    private-lab: deny
+    public-provider: deny
+
+logging:
+  prompt_content: false
+  response_content: false
+  routing_metadata: true
+  retention_days: 30
