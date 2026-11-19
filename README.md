@@ -1,10 +1,10 @@
 # Tribal Edge Server
 
-**An organization-controlled boundary for AI traffic.**
+**Offload “Mundane A.I.” locally. Govern what crosses your AI boundary.**
 
-Tribal Edge Server is an early-stage design for a self-hosted gateway that mediates AI requests between an organization's clients, local models, and explicitly permitted remote model services.
+Tribal Edge Server (T.E.S.) is an early-stage design for a self-hosted, **general-purpose AI computing gateway**—not an edge appliance tied to one predefined corporate task. It has two complementary goals: handle routine “Mundane A.I.” with local models so external services are not used unnecessarily, and enforce an organization-defined boundary that scopes what data may go to which model or provider, and under what policy and approval conditions.
 
-Its purpose is to make the organization's AI data boundary enforceable: control what may cross it, where that data may go, and under what policy and approval conditions. The project is intended to support compliance, safety, security, and privacy programs; it does not certify or guarantee any of those outcomes.
+This combines practical local inference with deliberate data-governance controls. Whether a local model can handle a task and whether its data may be sent to a remote provider are separate decisions. The project is intended to support compliance, safety, security, and privacy programs; it does not certify or guarantee any of those outcomes.
 
 > **Local by default. Escalate deliberately. Keep the boundary yours.**
 
