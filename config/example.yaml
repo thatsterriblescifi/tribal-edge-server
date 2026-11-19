@@ -1,6 +1,9 @@
 # Design sketch only: there is no implementation or supported config schema yet.
 # External providers are disabled. Enabling one requires deliberate deployment
 # configuration and does not replace network controls that prevent bypass.
+# Personal proof-of-concept target: one Debian host with one GPU, running the
+# gateway and Ollama together. The model target is approximately 30B parameters,
+# subject to host fit. These are not limits on future deployment environments.
 
 server:
   bind_address: "127.0.0.1"

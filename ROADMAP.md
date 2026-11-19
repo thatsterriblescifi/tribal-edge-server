@@ -9,7 +9,9 @@ This roadmap describes proposed work. A checked box means the work has been comp
 - [ ] Define the policy terminology: user, application, workspace, data class, provider
 - [ ] Review and improve the threat model
 - [ ] Decide on the initial implementation language and framework
-- [ ] Decide whether the first release is a library, service, or both
+- [ ] Define the personal proof of concept as a single-host Debian service with one GPU and a local Ollama adapter
+- [ ] Select and record a practical Ollama model around 30B parameters that runs comfortably on the proof-of-concept host
+- [ ] Keep policy and data-scoping concepts independent of the single-host deployment topology
 
 ## 2. Establish safe defaults
 
@@ -61,13 +63,14 @@ This roadmap describes proposed work. A checked box means the work has been comp
 
 ## 7. Deployment and operations
 
-- [ ] Document Debian installation
-- [ ] Document Ollama setup and model selection
+- [ ] Document single-host Debian proof-of-concept installation
+- [ ] Document Ollama setup and model selection, including host-specific resource considerations
 - [ ] Add example systemd service files
 - [ ] Document TLS and reverse-proxy deployment
 - [ ] Document backup and restore of policy configuration
 - [ ] Document upgrades and rollback
 - [ ] Provide a workload benchmarking guide
+- [ ] Assess what additional deployment and operational work is needed for private-datacenter use
 
 ## 8. Compliance support
 
