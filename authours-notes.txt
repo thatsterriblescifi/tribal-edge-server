@@ -19,7 +19,7 @@ intelligent & effecient question, and then sends that question upstream to your
 pre-configured "Big Iron" providers, Copilot, ChatGPT, SpecializedDorkonimics, HMOHealth,
 Whomever.
 
-the Big model then replies with an answer taylored for the 30B to be able to properly
+the Big model then replies with an answer tailored for the 30B to be able to properly
 present it back to the user.
 
 So the big model never gets asked mundane questions... like what's the proper syntax
@@ -31,5 +31,3 @@ get in front of it or The People will suffer.
 R&M - "You pass butter."
 
 - Tess as a personal/organizational data broker.
-
-
